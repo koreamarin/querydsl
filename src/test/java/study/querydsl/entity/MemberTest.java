@@ -37,6 +37,7 @@ class MemberTest {
         em.persist(member3);
         em.persist(member4);
 
+        // 초기화
         em.flush(); // 영속성 컨텍스트에 있는 쿼리를 DB에 반영
         em.clear(); // 영속성 컨텍스트 초기화
 
